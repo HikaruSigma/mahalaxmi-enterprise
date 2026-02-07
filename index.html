@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahalaxmi Enterprises — Flyash Bricks & ACC Blocks</title>
+
+<style>
+    html{
+scroll-behavior:smooth;
+}
+
+:root{
+--primary:#b71c1c;
+--primary-light:#e53935;
+--bg:#f4f6f8;
+--card:#ffffff;
+--text:#222;
+--radius:12px;
+--shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+}
+
+body{
+background:var(--bg);
+color:var(--text);
+line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(135deg,var(--primary),var(--primary-light));
+color:white;
+padding:18px 24px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+header h1{
+font-size:22px;
+letter-spacing:.5px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:18px;
+font-weight:600;
+opacity:.9;
+transition:.2s;
+}
+
+nav a:hover{
+opacity:1;
+transform:translateY(-1px);
+}
+
+/* HERO */
+
+.hero{
+padding:100px 20px;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
+color:white;
+}
+
+.hero h2{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+opacity:.9;
+}
+
+/* SECTIONS */
+
+.section{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
+
+.section h2{
+font-size:28px;
+margin-bottom:30px;
+position:relative;
+}
+
+.section h2::after{
+content:"";
+display:block;
+width:60px;
+height:4px;
+background:var(--primary);
+margin-top:8px;
+border-radius:2px;
+}
+
+/* PRODUCT GRID */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:28px;
+}
+
+/* CARDS */
+
+.card{
+background:var(--card);
+padding:26px;
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+transition:.25s ease;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 14px 30px rgba(0,0,0,0.15);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.link-card{
+text-decoration:none;
+color:inherit;
+}
+
+.view{
+display:inline-block;
+margin-top:14px;
+font-weight:600;
+color:var(--primary);
+}
+
+/* CONTACT */
+
+.contact-box{
+background:var(--card);
+padding:30px;
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+line-height:1.9;
+}
+
+/* FOOTER */
+
+footer{
+background:#1a1a1a;
+color:#bbb;
+text-align:center;
+padding:24px;
+font-size:14px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+.hero h2{
+font-size:30px;
+}
+
+header{
+text-align:center;
+}
+
+nav{
+margin-top:10px;
+}
+}
+.about-box{
+background:var(--card);
+padding:32px;
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+
+max-width:1060px;   /* balanced width */
+margin:0 auto;     /* centered */
+
+line-height:1.9;
+font-size:16px;
+transition:.25s ease;
+}
+
+.about-box:hover{
+transform:translateY(-4px);
+box-shadow:0 14px 28px rgba(0,0,0,0.12);
+}
+
+
+
+.know-more-btn{
+display:inline-block;
+margin-top:18px;
+padding:10px 18px;
+background:var(--primary);
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-weight:600;
+transition:.25s;
+}
+
+.know-more-btn:hover{
+background:var(--primary-light);
+transform:translateY(-2px);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Mahalaxmi Enterprises</h1>
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<h2>Quality Flyash Bricks & ACC Blocks</h2>
+<p>Strong. Durable. Reliable Construction Materials.</p>
+</section>
+
+<section class="section" id="products">
+    <h2>Our Products</h2>
+    
+    <div class="products">
+    
+    <a href="flyash.html" class="card link-card">
+    <h3>Flyash Bricks</h3>
+    <p>Eco-friendly, high-strength bricks available in multiple sizes.</p>
+    <span class="view">View Sizes →</span>
+    </a>
+    
+    <div class="card">
+    <h3>ACC Blocks</h3>
+    <p>Lightweight AAC blocks offering superior insulation and faster construction.</p>
+    </div>
+    
+    </div>
+    </section>
+    
+
+    <div class="about-box">
+        <h2>About Us</h2>
+        <p>
+        Mahalaxmi Enterprises is a trusted brick manufacturing company based in
+        Indore, Madhya Pradesh. We specialize in premium flyash bricks and ACC 
+        blocks engineered for strong and sustainable construction.
+        </p>
+        
+        <p>
+        Our focus is consistent quality, reliable supply, and customer satisfaction
+        for residential and commercial projects.
+        </p>
+        
+        <p><strong>Ashutosh Vyas:</strong> 9300286383</p>
+        
+        <a href="registration.html" class="know-more-btn">
+        Know More → Registration & Legal Details
+        </a>
+        
+        </div>
+        
+        
+
+<section class="section" id="contact">
+<h2>Contact Us</h2>
+
+<div class="contact-box">
+<p><strong>Address:</strong><br>
+Village Talawali Chanda,<br>
+A.B. Road, Dewas Naka,<br>
+Indore (Madhya Pradesh)</p>
+
+<p><strong>Company Contact:</strong> 9977002676</p>
+<p><strong>Owner Contact:</strong> 9300286383</p>
+<p><strong>Email:</strong> mahalaxmibricks2012@gmail.com</p>
+</div>
+
+</section>
+
+<footer>
+© 2012-2026 Mahalaxmi Enterprises — All Rights Reserved
+</footer>
+<script>
+    const observer=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+    if(entry.isIntersecting){
+    entry.target.classList.add("show");
+    }
+    });
+    },{threshold:.15});
+    
+    document.querySelectorAll(".section")
+    .forEach(sec=>observer.observe(sec));
+    </script>
+    
+</body>
+</html>
